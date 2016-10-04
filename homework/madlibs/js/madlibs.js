@@ -38,17 +38,17 @@ function generateStartup() {
 	// TODO: generate two random index numbers, one for each array
 
 	var randomNumberOne = startupX[(Math.floor(Math.random() * (startupX.length)))];
-	console.log(randomNumberOne);
+	//console.log(randomNumberOne);
 
 	var randomNumberTwo = startupY[(Math.floor(Math.random() * (startupY.length)))];
-	console.log(randomNumberTwo);
+	//console.log(randomNumberTwo);
 
 	// TODO: concatenate the fixed text with the two random values
 	//       to create a new startup idea like:
 	//       "A startup that is Apple, but for Trello"
 
 	startupIdea = "A startup that is " + randomNumberOne + ", but for " + randomNumberTwo;
-	console.log(startupIdea);
+	//console.log(startupIdea);
 
 
 	// DONE: Update page with new startup idea
@@ -63,7 +63,7 @@ function saveFavorite() {
 
 	// TODO: add the new idea to the array
 	favorites.push(startupIdea);
-	console.log(favorites); 
+	//console.log(favorites); 
 }
 
 
