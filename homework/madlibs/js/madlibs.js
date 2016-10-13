@@ -89,5 +89,6 @@ function printFavorites() {
 
 	// DONE: update the list element with the
 	// new list of favorites
+	
 	list.innerHTML = favoritesText;
 }

@@ -1,0 +1,74 @@
+<body>
+
+	<h1>Lorem</h1>
+	<p></p>
+
+<ul>
+	<li>placetext1</li>
+	<li>placetext2</li>
+	<li>placetext3</li>
+	<li>
+		<p>name</p>
+		<img src="http://cdn-image.foodandwine.com/sites/default/files/200806-xl-fish-tacos.jpg">
+	</li>
+</ul>
+
+	<div>
+	</div>
+
+
+</body>
+
+
+<script> 
+
+var div = document.querySelector("div");
+div.innerHTML = "<h2>sunt in culpa qui officia";
+
+// Elements
+var ul = document.querySelector("ul");
+
+//Technique #1: usign createElement and appendChild
+function createMenuItem() {
+	// Step 1: create elements
+	var li = document.createElement("li");
+	var p = document.createElement("p");
+	var img = document.createElement("img");
+
+	// Step 2: give it content and attributes
+	p.innerHTML = "Fish Tacos";
+	img.src = "http://cdn-image.foodandwine.com/sites/default/files/200806-xl-fish-tacos.jpg";
+
+	//img.width = "100";
+
+	// Step 3: append new elements to DOM
+	ul.appendChild(li)
+	li.appendChild(p);
+	li.appendChild(img);
+	
+	console.log(li);
+}
+// Technique #2: using innerHTML - which is like string concatenation templates.
+function createMenuItemTemplate() {
+	//innerhtml
+
+	var template = 
+	//"<li>" +
+		"<p>Beef taco</p>" + 
+		'img src ="http://cdn-image.foodandwine.com/sites/default/files/200806-xl-fish-tacos.jpg">' 
+		//+ "</li>";
+
+	li.innerHTML = template;
+	ul.appendChild(li);
+
+	console.log(template);
+}
+
+
+</script>
+
+<style>
+img {
+	width: 100px;
+}
+</style>
