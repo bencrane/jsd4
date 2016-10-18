@@ -3,7 +3,7 @@
  var ul = document.querySelector(".lyrics");
 
 // Create unordered list element and add to lyrics section
-var ul = document.createElement("ul");
+var ul = document.querySelector(".lyrics");
 
 
 // Update page
@@ -34,9 +34,10 @@ function createSong(count) {
 
 // for loop to count through the number of bottles
 for (var i = 99; i > -1; i--){
-	createSong(i)
+	createSong(i);
 }
 
+console.log("99 bottles of beer on the wall!");
 
 
 ///NOTES
